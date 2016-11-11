@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+						
+					var questions = {
+						q1: ["What's your name? ", "Peter"],
+						q2: ["How old are you? ", "29"],
+						q3: ["What city do you live in? ","Chicago"],
+					}
+					console.log(questions.q1[0]);
+					console.log(questions.q1[1]);
+
+				var name = prompt(questions.q1[0]);
+					console.log(name);
+				var age = prompt(questions.q2[0]);
+					console.log(age);
+				var city = prompt(questions.q3[0]);
+					console.log(city);
+
+					if( name === questions.q1[1]) {
+						console.log("You are Correct")
+						document.write("you are correct")
+					} else {
+						console.log("you are wrong")
+					}
+
+
+					if (age === questions.q2[1]){
+						console.log("You are correct ");
+						document.write("you are correct");
+					} else {
+						console.log("you are wrong, Peter is 29");
+					}
+
+					if (city === questions.q3[1]){
+						console.log("you are correct");
+						document.write("Yes! Peter is from Chicago");
+					} else {
+						console.log("You are wrong, Peter is from Chicago");
+						document.write("No! Peter is from Chicago");
+					}
+
+
+
+	</script>
+
+	
+</body>
+</html>

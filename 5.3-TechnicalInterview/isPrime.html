@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+<br><br><br>
+<center>
+<input type="number" id="inp" placeholder="Enter a Number" />
+<input type="button" id="check" value="check" onclick="generate()"/>
+</center>
+
+
+
+<script type="text/javascript">
+
+var input = document.getElementById('inp')
+var divisor
+
+
+function generate(){
+var flag = true
+
+	for(var i = 2; i<= (input.value/2); i++){
+		if (input.value % i == 0){
+			flag = false
+			divisor = i
+			break
+		}
+	}
+
+if(flag == true) alert(input.value+ '  is a Prime Number');
+if(flag == false) alert(input.value + 'is not a prime number' + ', it is divisible by' + divisor)
+
+
+}
+
+
+
+</script>
+
+	
+</body>
+</html>

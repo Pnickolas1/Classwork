@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	alert("Are you ready to play? ");
+var possibleOutcomes = ['paper','scissors','rock'];
+var userInput = prompt("Paper, Scissors or Rock ? ");
+	userInput =	userInput.toLowerCase();
+	console.log(userInput)
+
+var computerInput = possibleOutcomes[Math.floor(Math.random() * possibleOutcomes.length)];
+	console.log(computerInput);
+
+	if (userInput === computerInput){
+			document.write("you tied")
+	}
+
+var matchup = userInput + computerInput
+	console.log(matchup)
+
+
+var winner = ["rockscissors","paperrock","scissorpaper"];
+var loser = ["scissorrock","rockpaper","paperscissors"];
+
+if (winner.includes(matchup) === true) {
+	document.write("you Won!")
+}
+else if (loser.includes(matchup) === true){
+	document.write("you LOST!")
+	}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inclass Hangman</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+var theGame = {
+	wins: null, 
+	guessRemaining: null,
+	hiddenWord: "",
+	wordList: ["baseball", "soccer", "football", "hockey", "wrestling"],
+	activeWord : "",
+	selectWord: function(){
+		this.activeWord = this.wordList[Math.floor(Math.random()* (this.wordList.length-1))];
+	}, 
+	hash: function(){
+		this.hiddenWord = (this.selectWord.length)
+	},
+
+};
+ 
+
+	theGame.selectWord();
+	console.log(theGame.wordList);
+	console.log(theGame.activeWord);
+	console.log(theGame.guessRemaining);
+
+var userInputs ={
+	enterletter: function() {
+	this.keyEnter = String.forCharCode(event.keycode).toLowerCase();
+	},
+	keyEnter: "",
+};
+
+
+</script>
+</body>
+</html>

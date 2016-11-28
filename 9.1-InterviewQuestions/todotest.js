@@ -1,28 +1,24 @@
 
+
+
+
+
 $('#add').on('click', function(){
 	addTask();
+});
 
+$('input').keypress(function(event){
+	if(event.which == 13){
+		addTask();
+	}
 });
 
 
 function addTask(){
 	var task = $('#newtask').val();
-	console.log(task)
 
-$('#tasks').append("<div>" + task + '<span id="delete"> X </span></div>'
-	)
+	$('#tasks').append('<div>' + task + 
+		'<span id="delete"> X </span></div>');
 
-$('#newtask').val('');
+	('#newtask').val('');
 }
-
-$('input').keypress(function(event){
-	if (event.which ==13){
-		addTask();
-	}
-});
-
-function removeItem(){
-	$(this).closest('div').remove();
-}
-
-

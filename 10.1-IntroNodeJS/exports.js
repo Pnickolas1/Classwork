@@ -19,3 +19,7 @@ console.log(stuffINeed.nicetohaves);
 console.log("--------------------------");
 console.log("Nonessentials");
 console.log(stuffINeed.nonessentials);
+
+
+
+var http = require("https://api.forecast.io/forecast/4650d6ba6c643b5dd6b1924b24346298/41.8781/-87.6298/?callback=?")
